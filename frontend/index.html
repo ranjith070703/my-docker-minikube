@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Legend ✨</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #000428, #004e92);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 50px 70px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: linear-gradient(90deg, #ff512f, #dd2476);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    }
+    .btn:hover {
+      transform: scale(1.1);
+      background: linear-gradient(90deg, #dd2476, #ff512f);
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.7);
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Hello from the Frontend Legend!</h1>
+    <p>Deployed with Docker 🐳 & Powered by Minikube ☁️</p>
+    <button class="btn" onclick="alert('frontend Active!')"></button>
+  </div>
+</body>
+</html>
