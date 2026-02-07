@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-                sh 'docker build -t backend ./backend'
+                bat 'docker build -t backend ./backend'
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'docker build -t frontend ./frontend'
+                bat 'docker build -t frontend ./frontend'
             }
         }
 
